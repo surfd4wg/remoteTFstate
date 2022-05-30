@@ -8,7 +8,12 @@
  
  Then come back, uncomment the backend section (between the curleys {} in the provider.tf file)
  
- Go back to CLI, and 'terraform init -reconfigure'
+ Go back to CLI, and perform 
+ ```
+ terraform init -reconfigure
+ terraform apply -auto-approve
+ ``` 
+ Answer 'yes' to migrate the state to S3
  
  Answer 'yes' to migrate the state to S3
  
